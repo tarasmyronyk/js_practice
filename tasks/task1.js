@@ -1,12 +1,15 @@
-const averageGrade = 80;
-if (averageGrade < 60) {
-    console.log("Unacceptable");
-} else if (averageGrade <= 70) {
-    console.log("Acceptable");
-} else if (averageGrade <= 80) {
-    console.log("Good");
-} else if (averageGrade <= 90) {
-    console.log("Very Good");
-} else if (averageGrade <= 100) {
-    console.log("Excellent");
+let area1 = function(width, height) {
+    return width * height;
 }
+
+function area2(width, height) {
+    return width * height;
+}
+
+let area3 = (width, height) => {
+    return width * height;
+}
+
+console.log(area1(5, 10));
+console.log(area2(5, 10));
+console.log(area3(5, 10));

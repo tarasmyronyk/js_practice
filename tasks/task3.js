@@ -1,12 +1,10 @@
-const number = 7;
-let i = 0;
-
-for (i = 1; i <= 10; i++) {
-    console.log(`${number} x ${i} = ${number * i}`);
+function checkOrder(available, ordered) {
+    if (available < ordered) {
+        console.log("Your order is too large, we don’t have enough goods.");
+    } else if (ordered === 0) {
+        console.log("Your order is empty");
+    } else {
+        console.log("Your order is accepted");
+    }
 }
-i = 1;
-console.log('\n');
-while (i <= 10) {
-    console.log(`${number} x ${i} = ${number * i}`);
-    i++;
-}
+checkOrder(10, 5);
