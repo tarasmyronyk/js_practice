@@ -1,15 +1,17 @@
-let area1 = function(width, height) {
-    return width * height;
+function handlenum (num, evenCallback, oddCallback) {
+    if ( num % 2 === 0 ) {
+        evenCallback();
+    } else {
+        oddCallback();
+    }
 }
 
-function area2(width, height) {
-    return width * height;
+function handleEven() {
+    console.log("The number is even.");
 }
 
-let area3 = (width, height) => {
-    return width * height;
+function handleOdd() {
+    console.log("The number is odd.");
 }
 
-console.log(area1(5, 10));
-console.log(area2(5, 10));
-console.log(area3(5, 10));
+handlenum(5, handleEven, handleOdd);

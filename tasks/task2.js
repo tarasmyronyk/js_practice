@@ -1,10 +1,9 @@
-function isAdult(age) {
-    if (age >= 18) {
-        return true;
-    } else {
-        return false;
+function recursiveFunction(n) {
+    if (n <= 0) {
+        return;
     }
+    console.log(n);
+    recursiveFunction(n - 1);
 }
 
-console.log(isAdult(25)); 
-console.log(isAdult(15)); 
+recursiveFunction(5);
