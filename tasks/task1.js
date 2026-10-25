@@ -1,17 +1,18 @@
-function handlenum (num, evenCallback, oddCallback) {
-    if ( num % 2 === 0 ) {
-        evenCallback();
+const numbers = [2, -5, 0, 7, -3, 0, 10, -8];
+let positiveCount = 0;
+let negativeCount = 0;
+let zeroCount = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+        positiveCount++;
+    } else if (numbers[i] < 0) {
+        negativeCount++;
     } else {
-        oddCallback();
+        zeroCount++;
     }
 }
 
-function handleEven() {
-    console.log("The number is even.");
-}
-
-function handleOdd() {
-    console.log("The number is odd.");
-}
-
-handlenum(5, handleEven, handleOdd);
+console.log(`Кількість позитивних чисел: ${positiveCount}`);
+console.log(`Кількість негативних чисел: ${negativeCount}`);
+console.log(`Кількість нульових чисел: ${zeroCount}`);

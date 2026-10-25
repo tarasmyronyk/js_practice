@@ -1,9 +1,7 @@
-function recursiveFunction(n) {
-    if (n <= 0) {
-        return;
-    }
-    console.log(n);
-    recursiveFunction(n - 1);
-}
+const startArray = [1, 2, 3, 4, 5];
 
-recursiveFunction(5);
+const resultArray = startArray.map((num, index) => {
+    return num * index;
+});
+
+console.log(resultArray);
