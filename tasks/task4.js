@@ -1,3 +1,9 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
-console.log(evenNumbers);
+const person = {
+    firstName: "Taras",
+    lastName: "Myronyk",
+    age: 20,
+};
+
+person.email = "email@example.com";
+delete person.age;
+console.log(person);

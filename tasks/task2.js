@@ -1,7 +1,9 @@
-const startArray = [1, 2, 3, 4, 5];
+const book = {
+    title : "Harry Potter",
+    author : "J.K. Rowling",
+    year : 1997,
+};
+const {title, author} = book;
 
-const resultArray = startArray.map((num, index) => {
-    return num * index;
-});
-
-console.log(resultArray);
+console.log(title);
+console.log(author);

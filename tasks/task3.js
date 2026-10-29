@@ -1,3 +1,18 @@
-const numbers = [10, 20, 30, 40, 50];
-const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log(`Сума чисел: ${sum}`);
+const car1 = {
+    brand : "Volkswagen",
+    model : "Golf",
+    year : 2020,
+};
+
+const car2 = {
+    brand : "Toyota",
+    model : "Camry",
+    owner : "John",
+};
+
+const car3 = {
+    ...car1,
+    ...car2,
+};
+
+console.log(car3);
