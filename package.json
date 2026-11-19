@@ -7,13 +7,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "jest"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
-    "chalk": "^6.0.1"
+    "axios": "^1.21.1",
+    "chalk": "^6.0.1",
+    "jest": "^30.5.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -22,5 +25,8 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "3.9.10"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
   }
 }
